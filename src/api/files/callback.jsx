@@ -51,10 +51,7 @@ const Callback = ({ onLoginStatusChange }) => {
 
 
     const handleLogin = () => {
-        // window.location = `${spotifyConfig.SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${spotifyConfig.CLIENT_ID}&redirect_uri=${spotifyConfig.REDIRECT_URI}&scope=${spotifyConfig.SCOPES_URL_PARAMS}&response_type=token&show_dialog=true`;
-        const redirectUri = "https://jammming-by-rsilva-kpayooupe-rui-silvas-projects-e9254194.vercel.app/callback";
-        window.location = `${spotifyConfig.SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${spotifyConfig.CLIENT_ID}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${spotifyConfig.SCOPES_URL_PARAMS}&response_type=token&show_dialog=true`;
-
+        window.location = `${spotifyConfig.SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${spotifyConfig.CLIENT_ID}&redirect_uri=${spotifyConfig.REDIRECT_URI}&scope=${spotifyConfig.SCOPES_URL_PARAMS}&response_type=token&show_dialog=true`;
     };
 
     const handleLogout = () => {
