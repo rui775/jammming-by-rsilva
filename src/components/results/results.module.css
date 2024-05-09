@@ -1,0 +1,135 @@
+.results {
+    width: 30rem;
+    height: 20rem;
+    background: linear-gradient(to right, #ff6666, #ffcc00);
+    transition: background 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+
+.results:hover {
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+}
+
+.resultsTitle {
+    font-size: xx-large;
+    font-family: "Jersey 20 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding-bottom: 0.5rem;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    padding-right: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.list::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+.list:hover::-webkit-scrollbar-track {
+    background: orange;
+}
+
+.list:hover::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 4rem;
+    border: 3px solid orange;
+}
+
+.list li {
+    margin-right: 0;
+}
+
+.entry {
+    background: linear-gradient(to right, #ff6666, #ffcc00);
+    transition: background 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.title {
+    font-weight: bold;
+    color: #800080;
+}
+
+.artist {
+    font-style: italic;
+    color: green;
+    font-weight: bold;
+}
+
+.addpreviewDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.audioPreview {
+    width: 8rem;
+    height: 2rem;
+    padding: 0;
+}
+
+.audioPreview::-webkit-media-controls-panel {
+    display: flex !important;
+    justify-content: center;
+    background-color: #838383;
+}
+
+.audioPreview::-webkit-media-controls-start-playback-button {
+    -webkit-appearance: media-controls-panel;
+}
+
+.audioPreview::-webkit-media-controls-current-time-display,
+.audioPreview::-webkit-media-controls-time-remaining-display,
+.audioPreview::-webkit-media-controls-timeline,
+.audioPreview::-webkit-media-controls-volume-slider-container,
+.audioPreview::-webkit-media-controls-mute-button,
+.audioPreview::-webkit-media-controls-toggle-closed-captions-button,
+.audioPreview::-webkit-media-controls-overlay-play-button {
+    display: none;
+}
+
+.addToPlayListIconDiv {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.icon {
+    width: 5em;
+    height: 1.5em;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 480px) {
+    .results {
+        width: 20rem;
+        height: 20rem;
+        margin-right: 0;
+    }
+}

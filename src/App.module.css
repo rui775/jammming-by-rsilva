@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to right, #ffcc00, #ff6666);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySpotifyButton {}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}

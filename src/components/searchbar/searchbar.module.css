@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dance {
+    animation: danceAnimation 2s infinite;
+    font-family: "Honk", system-ui;
+    font-size: 5rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+    letter-spacing: 1rem;
+    margin: 0 2rem;
+}
+
+.subheading {
+    font-family: 'Lemon';
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+}
+
+.subheading img {
+    width: 10rem;
+}
+
+.inputSearch {
+    width: 20rem;
+    background-color: transparent;
+    border: 2px solid purple;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    outline: none;
+}
+
+.inputSearch,
+.searchButton {
+    margin-bottom: 10px;
+}
+
+.inputSearch::placeholder {
+    color: purple;
+    text-align: center;
+}
+
+.searchButton {
+    width: 10rem;
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+
+@keyframes danceAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .dance {
+        font-size: 3.5rem;
+    }
+
+    .subheading {
+        font-size: 0.8rem;
+    }
+
+    .subheading img {
+        width: 5rem;
+    }
+}

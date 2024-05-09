@@ -1,0 +1,136 @@
+.playlist {
+    width: 30rem;
+    height: 20rem;
+    background: linear-gradient(to right, #ff6666, #ffcc00);
+    transition: background 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
+}
+
+.playlist:hover {
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    padding-right: 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.list::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+.list:hover::-webkit-scrollbar-track {
+    background: orange;
+}
+
+.list:hover::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 4rem;
+    border: 3px solid orange;
+}
+
+.list li {
+    margin-right: 0;
+}
+
+.entry {
+    background: linear-gradient(to right, #ff6666, #ffcc00);
+    transition: background 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.title {
+    font-weight: bold;
+    color: #800080;
+}
+
+.artist {
+    font-style: italic;
+    color: green;
+    font-weight: bold;
+}
+
+.searchButton {
+    width: 10rem;
+    background-color: #800080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.inputSearch {
+    width: 15rem;
+    background-color: transparent;
+    border: 2px solid purple;
+    padding: 7px;
+    font-size: 0.75rem;
+    border-radius: 25px;
+    outline: none;
+}
+
+.inputSearch,
+.searchButton {
+    margin-bottom: 10px;
+}
+
+.inputSearch::placeholder {
+    color: purple;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 1rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 1rem; */
+}
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .playlist {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .list {
+        max-width: 18rem;
+    }
+}
