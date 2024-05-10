@@ -8,6 +8,6 @@ Its purpose is to search for songs and add them to a playlist which can then be 
 
 Enjoy!
 
-[Play with it!]([https://rui775.github.io/jammming-byRui/](https://jammming-by-rsilva.vercel.app/)) 
+[Play with it!](https://jammming-by-rsilva.vercel.app/)
 
 Technologies: HTML, CSS, JavaScript and React. 
